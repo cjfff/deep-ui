@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<title>deepexi demo</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@femessage/element-ui@2.16.0/lib/theme-chalk/index.css">
+<script src="https://cdn.jsdelivr.net/npm/@femessage/element-ui@2.16.0/lib/index.js"></script>
+<script src="./deepexi.umd.js"></script>
+
+<link rel="stylesheet" href="./deepexi.css">
+
+<div id="app">
+    <span>{{msg}}</span>
+    <search-input v-model="msg"></search-input>
+</div>
+
+<script>
+    
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                msg: 'ss'
+            }
+        }
+    })
+    
+</script>

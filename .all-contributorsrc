@@ -1,0 +1,26 @@
+{
+  "projectName": "deepexi-ui",
+  "projectOwner": "deepexi.com",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "cjfff",
+      "name": "cjfff",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/20502762?s=96&v=4",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas"
+      ]
+    },
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}
