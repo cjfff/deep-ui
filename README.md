@@ -11,6 +11,9 @@
 使用及其简单的方式 (vue-cli3 以及 vuepress) 维护 团队/个人的 组件库。:tada::tada::tada:
 
 ## Feature
+[] 打包
+[] vuepress 组件文档预览实时修改
+[] 新建组件 (还差写入 index.js)
 
 ## Project setup
 

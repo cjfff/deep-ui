@@ -16,10 +16,12 @@ const getDocs = (dir = 'basic') => {
 module.exports = {
   title: 'DeepexiUi',
   base: '/deepexi-ui/',
+  dest: 'deepexi-ui',
   description: 'deepexi.com 中台研发团队的组件库',
   port: 8083,
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/vue-prism-editor@0.5.1/dist/VuePrismEditor.css' }]
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/vue-prism-editor@0.5.1/dist/VuePrismEditor.css' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js'}]
   ],
   plugins: [
     [
