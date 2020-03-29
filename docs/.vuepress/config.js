@@ -12,11 +12,10 @@ const getDocs = (dir = 'basic') => {
   return docs
 }
 
-
 module.exports = {
   title: 'DeepexiUi',
-  base: '/deepexi-ui/',
-  dest: 'deepexi-ui',
+  base: '/deepexi-com/deepexi-ui',
+  dest: 'workdir/deepexi-ui',
   description: 'deepexi.com 中台研发团队的组件库',
   port: 8083,
   head: [

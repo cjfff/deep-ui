@@ -9,6 +9,7 @@
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
     "lib": "vue-cli-service build --target lib --name deepexi --dest lib src/index.js",
+    "deploy": "bash deploy.sh",
     "new": "plop"
   },
   "description": "一个用来作为团队业务组件沉淀的 UI 组件库",
