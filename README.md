@@ -1,9 +1,8 @@
 # deepexi-ui
 
 [![Build Status](https://travis-ci.com/deepexi-com/deepexi-ui.svg?branch=master)](https://travis-ci.com/deepexi-com/deepexi-ui)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+[![NPM License](https://badgen.net/npm/license/@femessage/el-data-table)](https://github.com/deepexi-com/deepexi-ui/raw/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/deepexi-com/deepexi-ui/pulls)
 
 
 ## 介绍
@@ -64,3 +63,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->

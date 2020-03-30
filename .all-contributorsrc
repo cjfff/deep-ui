@@ -1,6 +1,6 @@
 {
-  "projectName": "cjfff",
-  "projectOwner": "cjfff",
+  "projectName": "deepexi-com",
+  "projectOwner": "deepexi-ui",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
@@ -12,7 +12,7 @@
   "contributors": [
     {
       "login": "cjfff",
-      "name": "cjf",
+      "name": "cjfff",
       "avatar_url": "https://avatars1.githubusercontent.com/u/20502762?v=4",
       "profile": "http://www.ccc1996.cn",
       "contributions": [
@@ -21,7 +21,6 @@
         "example",
         "ideas",
         "maintenance",
-        "platform",
         "code"
       ]
     }
