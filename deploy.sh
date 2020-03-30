@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # 确保脚本抛出遇到的错误
-#set -e
+set -e
 
 npm i -g vuepress core-js@2.6.11 --registry=https://registry.npm.taobao.org
 

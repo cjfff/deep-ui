@@ -9,8 +9,11 @@ title: list-container
 
 ```vue live
 <template>
+  
     <div>
+    <ClientOnly>
       <list-container v-model="value" :tabs="routes" @change="handleChange"/>
+    </ClientOnly>  
       <div>
         绑定的数据:
         {{value}}
@@ -55,11 +58,13 @@ export default {
 ```vue live
 <template>
     <div>
+    <ClientOnly>
       <list-container v-model="value" :tabs="tabs" @change="handleChange">
         <div slot="header">
           this is header slot
         </div>
       </list-container>
+    </ClientOnly>
       <div>
         绑定的数据:
         {{value}}

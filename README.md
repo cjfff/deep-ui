@@ -30,10 +30,6 @@ git clone
 yarn install
 ```
 
-
-
-
-
 ### 参考链接
 - https://github.com/vue-styleguidist/vuepress-plugin-live
 - https://github.com/BuptStEve/markdown-it-vuese
@@ -41,3 +37,9 @@ yarn install
 - https://markdown-it.github.io/markdown-it/
 - https://github.com/koca/vue-prism-editor
 - https://juejin.im/post/5dd234635188254a1f44646a#heading-27
+
+
+
+### 贡献者
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->

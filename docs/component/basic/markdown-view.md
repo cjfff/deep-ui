@@ -9,7 +9,9 @@ title: markdown-view
 
 ```vue live
 <template>
+  <ClientOnly>
     <markdown-view :content="content"/>
+  </ClientOnly>
 </template>
 
 <script>
