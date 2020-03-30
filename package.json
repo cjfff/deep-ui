@@ -10,6 +10,8 @@
     "docs:dev": "vuepress dev docs",
     "lib": "vue-cli-service build --target lib --name deepexi --dest lib src/index.js",
     "deploy": "bash deploy.sh",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
     "new": "plop"
   },
   "description": "一个用来作为团队业务组件沉淀的 UI 组件库",
@@ -44,6 +46,7 @@
     "@vue/cli-plugin-router": "~4.2.0",
     "@vue/cli-service": "^4.2.3",
     "@vue/eslint-config-prettier": "^6.0.0",
+    "all-contributors-cli": "^6.14.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.1.1",
