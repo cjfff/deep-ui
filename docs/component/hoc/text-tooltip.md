@@ -10,7 +10,7 @@ title: text-tooltip
 ```vue live
 <template>
     <ClientOnly>
-        <text-tooltip style="width:100px" content="啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></text-tooltip>
+        <text-tooltip style="width:100px" content="啊啊啊啊3f啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></text-tooltip>
     </ClientOnly>
 </template>
 ```
