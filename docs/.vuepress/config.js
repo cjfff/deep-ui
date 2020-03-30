@@ -46,7 +46,7 @@ module.exports = {
     nav: [
       { text: '主页', link: '/' },
       { text: '组件', link: '/component/guide/introduction' },
-      { text: 'github', link: 'https://github.com/deepexi-com/deepexi-ui' },
+      { text: 'GitHub', link: 'https://github.com/deepexi-com/deepexi-ui' },
       // { text: 'External', link: 'https://github.com/deepexi-com/deepexi-ui' },
     ],
     sidebar: {
