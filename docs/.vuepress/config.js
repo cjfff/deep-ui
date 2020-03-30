@@ -14,8 +14,8 @@ const getDocs = (dir = 'basic') => {
 
 module.exports = {
   title: 'DeepexiUi',
-  base: '/deepexi-com/deepexi-ui',
-  dest: 'workdir/deepexi-ui',
+  base: '/deepexi-com/deepexi-ui/',
+  dest: 'workdir/deepexi-ui/',
   description: 'deepexi.com 中台研发团队的组件库',
   port: 8083,
   head: [
