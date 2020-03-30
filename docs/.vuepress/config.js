@@ -20,7 +20,9 @@ module.exports = {
   port: 8083,
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/vue-prism-editor@0.5.1/dist/VuePrismEditor.css' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js'}]
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@femessage/element-ui@2.16.0/lib/theme-chalk/index.css' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/@femessage/element-ui@2.16.0/lib/index.js' }],
   ],
   plugins: [
     [
@@ -44,7 +46,8 @@ module.exports = {
     nav: [
       { text: '主页', link: '/' },
       { text: '组件', link: '/component/guide/introduction' },
-      { text: 'External', link: 'https://github.com/deepexi-com/deepexi-ui' },
+      { text: 'github', link: 'https://github.com/deepexi-com/deepexi-ui' },
+      // { text: 'External', link: 'https://github.com/deepexi-com/deepexi-ui' },
     ],
     sidebar: {
       '/component/': [
@@ -73,13 +76,13 @@ module.exports = {
   },
   markdown: {
     extendMarkdown: (md) => {
-      md.use(require('markdown-it-vuese'), { 
+      md.use(require('markdown-it-vuese'), {
         root: `${process.cwd()}/src/components/`,
         useRender: (vueseRender) => {
           const renderRes = vueseRender.render()
           // 格式转换可以去这里查看详情 https://vuese.org/zh/markdown-render/#%E5%AE%9E%E4%BE%8B%E6%96%B9%E6%B3%95-render
-          return Object.entries(renderRes).reduce((acc, [title, value]) =>   acc.concat(`## ${title}\r ${value}`)
-          , []).join('\r')
+          return Object.entries(renderRes).reduce((acc, [title, value]) => acc.concat(`## ${title}\r ${value}`)
+            , []).join('\r')
         },
       })
     }
