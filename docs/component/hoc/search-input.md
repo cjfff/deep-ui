@@ -5,7 +5,7 @@ title: search-input
 
 这是一个 UI 样式组件
 
-```vue live
+```vue live lineNumbers
 <template>
     <search-input placeholder="请输入" v-model="value"/>
 </template>

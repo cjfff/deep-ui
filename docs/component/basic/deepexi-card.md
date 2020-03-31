@@ -5,7 +5,7 @@ title: deepexi-card
 
 ## 基本使用
 
-```vue live
+```vue live lineNumbers
 <template>
     <deepexi-card title="登陆" style="background: #efefef;">
       <el-form-renderer :content="content" v-model="data" label-position="top" ref="form">

@@ -5,7 +5,7 @@ title: loading-dialog
 
 该组件内置了 `el-footer`，以及发送请求自动对 `confirm` 按钮进行 `loading`, 从细节上减少您的工作量~
 
-```vue live
+```vue live lineNumbers
 <template>
   <div>
     <loading-dialog

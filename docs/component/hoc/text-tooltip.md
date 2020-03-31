@@ -7,7 +7,7 @@ title: text-tooltip
 
 ## 基本使用
 
-```vue live
+```vue live lineNumbers
 <template>
     <ClientOnly>
         <text-tooltip style="width:100px" content="啊啊啊啊3f啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊"></text-tooltip>

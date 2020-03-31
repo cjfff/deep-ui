@@ -7,9 +7,8 @@ title: list-container
 
 ## 基本使用
 
-```vue live
+```vue live lineNumbers
 <template>
-  
     <div>
     <ClientOnly>
       <list-container v-model="value" :tabs="routes" @change="handleChange"/>
