@@ -1,42 +1,41 @@
 {
-  "name": "@deepexi.com/deepexi-ui",
-  "version": "1.0.1",
-  "private": true,
+  "name": "deep-ui",
+  "version": "1.0.0",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "yarn build",
     "lint": "vue-cli-service lint",
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",
-    "lib": "vue-cli-service build --target lib --name deepexi --dest lib src/index.js",
+    "lib": "vue-cli-service build --target lib --name deep-ui --dest lib src/index.js",
     "deploy": "bash deploy.sh",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate",
     "new": "plop"
   },
   "description": "一个用来作为团队业务组件沉淀的 UI 组件库",
-  "author": "https://github.com/cjfff",
+  "author": "cjfff <cjfff1996@gmail.com>",
   "contributors": [
     "https://github.com/cjfff"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/deepexi-com/deepexi-ui.git"
+    "url": "https://github.com/deep-ui.git"
   },
-  "homepage": "https://github.com/deepexi-com/deepexi-ui.git",
+  "homepage": "https://github.com/deep-ui/README.md",
   "files": [
     "lib",
-    "src",
-    "types"
+    "src"
   ],
   "keywords": [
-    "deepexi",
+    "deep-ui",
     "vue",
     "components"
   ],
   "license": "MIT",
-  "main": "lib/deepexi.umd.min.js",
-  "style": "lib/deepexi.css",
+  "main": "lib/deep-ui.umd.min.js",
+  "style": "lib/deep-ui.css",
   "devDependencies": {
     "@femessage/el-form-renderer": "^1.14.6",
     "@femessage/element-ui": "^2.16.0",
@@ -52,10 +51,10 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^6.1.2",
     "glob": "^7.1.6",
+    "json-templater": "^1.2.0",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "markdown-it-vuese": "^0.4.0",
-    "online-vue-editor": "^1.1.0",
     "plop": "^2.6.0",
     "prettier": "^1.19.1",
     "sass": "^1.25.0",
@@ -65,6 +64,6 @@
     "vue-cli-plugin-element-ui": "~1.1.4",
     "vue-cli-plugin-style-resources-loader": "~0.1.4",
     "vue-template-compiler": "^2.6.11",
-    "vuepress-plugin-live": "^1.4.2"
+    "vuepress-plugin-live": "^1.5.1"
   }
 }

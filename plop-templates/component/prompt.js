@@ -61,15 +61,15 @@ module.exports = {
         data: {
           name: kebabName
         }
+      },
+      {
+        type: "writeJsonAndBuildEntry",
+        data: {
+          name: data.name
+        }
       }
-      // {
-      //   type: "writeIndexAction",
-      //   data: {
-      //     name: data.name
-      //   }
-      // }
     ];
 
-    return actions;
+    return actions.slice(3);
   }
 };

@@ -5310,6 +5310,11 @@ json-stringify-safe@~5.0.1:
   resolved "https://registry.npm.taobao.org/json-stringify-safe/download/json-stringify-safe-5.0.1.tgz#1296a2d58fd45f19a0f6ce01d65701e2c735b6eb"
   integrity sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=
 
+json-templater@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/json-templater/download/json-templater-1.2.0.tgz#d12c96c7781d8451d623a8bee9b58f6901a8b15e"
+  integrity sha1-0SyWx3gdhFHWI6i+6bWPaQGosV4=
+
 json3@^3.3.2:
   version "3.3.3"
   resolved "https://registry.npm.taobao.org/json3/download/json3-3.3.3.tgz#7fc10e375fc5ae42c4705a5cc0aa6f62be305b81"
@@ -6339,16 +6344,6 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-online-vue-editor@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/online-vue-editor/download/online-vue-editor-1.1.0.tgz?cache=0&sync_timestamp=1585451560963&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fonline-vue-editor%2Fdownload%2Fonline-vue-editor-1.1.0.tgz#97f3b7faf022576e24271bc3849562c529fc819a"
-  integrity sha1-l/O3+vAiV24kJxvDhJVixSn8gZo=
-  dependencies:
-    "@femessage/element-ui" "^2.16.0"
-    prismjs "^1.19.0"
-    vue-live "^1.5.1"
-    vue-prism-editor "^0.5.1"
-
 open@^6.3.0:
   version "6.4.0"
   resolved "https://registry.npm.taobao.org/open/download/open-6.4.0.tgz#5c13e96d0dc894686164f18965ecfe889ecfc8a9"
@@ -7171,7 +7166,7 @@ pretty-error@^2.0.2:
     renderkid "^2.0.1"
     utila "~0.4"
 
-prismjs@^1.16.0, prismjs@^1.19.0:
+prismjs@^1.16.0:
   version "1.19.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.19.0.tgz#713afbd45c3baca4b321569f2df39e17e729d4dc"
   integrity sha512-IVFtbW9mCWm9eOIaEkNyo2Vl4NnEifis2GQ7/MLRG5TQe6t+4Sj9J5QWI9i3v+SS43uZBlCAOn+zYTVYQcPXJw==
@@ -9009,10 +9004,10 @@ vue-inbrowser-compiler@^3.21.0:
     camelcase "^5.3.1"
     walkes "^0.2.1"
 
-vue-live@^1.4.3, vue-live@^1.5.1:
-  version "1.5.1"
-  resolved "http://r.cnpmjs.org/vue-live/download/vue-live-1.5.1.tgz#6c2f432a5d2ae37c43d64500ca47f29391695f10"
-  integrity sha1-bC9DKl0q43xD1kUAykfyk5FpXxA=
+vue-live@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.npm.taobao.org/vue-live/download/vue-live-1.6.0.tgz#14801904ab9a74ac815cc0d5f6c4cbac5074287d"
+  integrity sha1-FIAZBKuadKyBXMDV9sTLrFB0KH0=
   dependencies:
     core-js "^2.6.5"
     debounce "^1.2.0"
@@ -9031,19 +9026,15 @@ vue-loader@^15.8.3:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-no-ssr@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/vue-no-ssr/download/vue-no-ssr-1.1.1.tgz#875f3be6fb0ae41568a837f3ac1a80eaa137b998"
+  integrity sha1-h1875vsK5BVoqDfzrBqA6qE3uZg=
+
 vue-prism-editor@^0.3.0:
   version "0.3.0"
   resolved "http://r.cnpmjs.org/vue-prism-editor/download/vue-prism-editor-0.3.0.tgz#8ff2c3acb3a7de5b5fe98c0b8501bfccccb1c295"
   integrity sha1-j/LDrLOn3ltf6YwLhQG/zMyxwpU=
-  dependencies:
-    dom-iterator "^1.0.0"
-    escape-html "^1.0.3"
-    unescape "^1.0.1"
-
-vue-prism-editor@^0.5.1:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/vue-prism-editor/-/vue-prism-editor-0.5.1.tgz#7f3b2eef680c81cb77e1cf0402d62066307e2725"
-  integrity sha512-8RBDhfbjAaVXTmIbSwv215QdhAiXKEK6dyjf6HP0dnLnR/2jrsJCatX/ubHqHrvpfPzacUBU+w6Qms1Gf01YkA==
   dependencies:
     dom-iterator "^1.0.0"
     escape-html "^1.0.3"
@@ -9075,13 +9066,14 @@ vue@^2.6.11:
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.11.tgz?cache=0&sync_timestamp=1585089754204&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue%2Fdownload%2Fvue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha1-dllNh31LEiNEBuhONSdcbVFBJcU=
 
-vuepress-plugin-live@^1.4.2:
-  version "1.4.2"
-  resolved "http://r.cnpmjs.org/vuepress-plugin-live/download/vuepress-plugin-live-1.4.2.tgz#cfb39cf20dfdb32cda8b65a5c68a8058d2f07b2a"
-  integrity sha1-z7Oc8g39syzai2WlxoqAWNLweyo=
+vuepress-plugin-live@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-live/download/vuepress-plugin-live-1.5.1.tgz#be5d21a2f81735c0d69a265318557a2695cc8f44"
+  integrity sha1-vl0hovgXNcDWmiZTGFV6JpXMj0Q=
   dependencies:
     acorn "^6.1.1"
-    vue-live "^1.4.3"
+    vue-live "^1.6.0"
+    vue-no-ssr "^1.1.1"
     walkes "^0.2.1"
 
 walkes@^0.2.1:
