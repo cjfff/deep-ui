@@ -1,30 +1,18 @@
 <template>
-  <div
-    class="online-vue-editor"
-    @mouseenter="hovering = true"
-    @mouseleave="hovering = false"
-  >
+  <div class="online-vue-editor" @mouseenter="hovering = true" @mouseleave="hovering = false">
     <div class="online-vue-editor-preview">
       <slot name="preview"></slot>
     </div>
     <div class="online-vue-editor-main">
       <transition name="height-slide">
         <div v-show="showCode" class="online-vue-editor-main-code">
-          <span
-            class="copy"
-            :class="{'is-success': copySuccess}"
-            @click="handleCopy"
-            >{{ copyMsg }}</span
-          >
+          <span class="copy" :class="{'is-success': copySuccess}" @click="handleCopy">{{ copyMsg }}</span>
           <slot name="editor"></slot>
         </div>
       </transition>
       <div class="online-vue-editor-main-button" @click="handleClickButton">
         <transition name="arrow-slide">
-          <span
-            class="tringle"
-            :class="{hovering: hovering, reverse: showCode}"
-          ></span>
+          <span class="tringle" :class="{hovering: hovering, reverse: showCode}"></span>
         </transition>
         <transition name="text-slide">
           <span v-show="hovering">{{ controlText }}</span>
@@ -36,45 +24,45 @@
 
 <script>
 export default {
-  name: 'OnlineVueLayout',
+  name: "OnlineVueLayout",
   data() {
     return {
       showCode: false,
       hovering: false,
       copySuccess: false
-    }
+    };
   },
   computed: {
     controlText() {
-      return this.showCode ? '隐藏代码' : '显示代码'
+      return this.showCode ? "隐藏代码" : "显示代码";
     },
     copyMsg() {
-      return this.copySuccess ? 'SUCCESS' : 'COPY'
+      return this.copySuccess ? "SUCCESS" : "COPY";
     }
   },
   methods: {
     handleClickButton() {
-      this.showCode = !this.showCode
+      this.showCode = !this.showCode;
     },
     handleCopy() {
       const getCode = list =>
         list.reduce((acc, item) => {
-          return item.code && item.code
-        }, '')
+          return item.code && item.code;
+        }, "");
 
-      const input = document.createElement('input')
-      input.style.visibility = 'none'
-      input.value = getCode(this.$children)
-      document.body.appendChild(input)
-      input.select()
-      document.execCommand('copy')
-      this.copySuccess = true
+      const input = document.createElement("input");
+      input.style.visibility = "none";
+      input.value = getCode(this.$children);
+      document.body.appendChild(input);
+      input.select();
+      document.execCommand("copy");
+      this.copySuccess = true;
       setTimeout(() => {
-        this.copySuccess = false
-      }, 2000)
+        this.copySuccess = false;
+      }, 2000);
     }
   }
-}
+};
 </script>
 
 <style lang="less">
@@ -161,14 +149,14 @@ export default {
         width: 0;
         line-height: 44px;
         height: 0;
-        top: 8px;
+        top: 16px;
         border: 8px solid transparent;
-        border-bottom: 12px solid #d3dce6;
+        border-top: 12px solid #d3dce6;
 
         &.reverse {
-          top: 16px;
+          top: 8px;
           border: 8px solid transparent;
-          border-top: 12px solid #d3dce6;
+          border-bottom: 12px solid #d3dce6;
         }
 
         &.hovering {
@@ -180,11 +168,11 @@ export default {
         background-color: #f9fafc;
         .tringle {
           border: 8px solid transparent;
-          border-bottom: 12px solid #409eff;
+          border-top: 12px solid #409eff;
         }
         .tringle.reverse {
           border: 8px solid transparent;
-          border-top: 12px solid #409eff;
+          border-bottom: 12px solid #409eff;
         }
       }
     }
@@ -196,18 +184,27 @@ export default {
  * @author Rose Pritchard
  */
 
-  code[class*='language-'],
-  pre[class*='language-'] {
+ .prism-editor-wrapper {
+   background-color: #2d2d2d;
+ }
+
+  .prism-editor__line-numbers {
+    padding-top: 20px !important;
+     line-height: 1.5rem !important;
+  }
+
+  code[class*="language-"],
+  pre[class*="language-"] {
     color: #ccc;
     background: none;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
     font-size: 1em;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
-    line-height: 1.5;
+    line-height: 1.5rem;
 
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -220,8 +217,8 @@ export default {
   }
 
   /* Code blocks */
-  pre[class*='language-'] {
-    padding: 1.5rem;
+  pre[class*="language-"] {
+    padding: 1.1rem;
     margin: 0.5em 0;
     border-radius: 0;
     font-size: 12px;
@@ -229,13 +226,13 @@ export default {
     overflow: auto;
   }
 
-  :not(pre) > code[class*='language-'],
-  pre[class*='language-'] {
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
     background: #2d2d2d;
   }
 
   /* Inline code */
-  :not(pre) > code[class*='language-'] {
+  :not(pre) > code[class*="language-"] {
     padding: 0.1em;
     border-radius: 0.3em;
     white-space: normal;

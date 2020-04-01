@@ -1,8 +1,8 @@
-# deepexi-ui
+# dee-ui
 
-[![Build Status](https://travis-ci.com/deepexi-com/deepexi-ui.svg?branch=master)](https://travis-ci.com/deepexi-com/deepexi-ui)
-[![NPM License](https://badgen.net/npm/license/@femessage/el-data-table)](https://github.com/deepexi-com/deepexi-ui/raw/master/LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/deepexi-com/deepexi-ui/pulls)
+[![Build Status](https://travis-ci.com/cjfff/deep-ui.svg?branch=master)](https://travis-ci.com/cjfff/deep-ui)
+[![NPM License](https://badgen.net/npm/license/@femessage/el-data-table)](https://github.com/cjfff/deep-ui/raw/master/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/cjfff/deep-ui/pulls)
 
 
 ## 介绍
@@ -42,6 +42,7 @@ yarn install
 - https://markdown-it.github.io/markdown-it/
 - https://github.com/koca/vue-prism-editor
 - https://juejin.im/post/5dd234635188254a1f44646a#heading-27
+- https://segmentfault.com/a/1190000015261753
 
 
 
@@ -54,7 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="http://www.ccc1996.cn"><img src="https://avatars1.githubusercontent.com/u/20502762?v=4" width="100px;" alt=""/><br /><sub><b>cjf</b></sub></a><br /><a href="https://github.com/cjfff/cjfff/commits?author=cjfff" title="Documentation">📖</a> <a href="https://github.com/cjfff/cjfff/issues?q=author%3Acjfff" title="Bug reports">🐛</a> <a href="#example-cjfff" title="Examples">💡</a> <a href="#ideas-cjfff" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-cjfff" title="Maintenance">🚧</a> <a href="#platform-cjfff" title="Packaging/porting to new platform">📦</a> <a href="https://github.com/cjfff/cjfff/commits?author=cjfff" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.ccc1996.cn"><img src="https://avatars1.githubusercontent.com/u/20502762?v=4" width="100px;" alt=""/><br /><sub><b>cjfff</b></sub></a><br /><a href="https://github.com/cjfff/deep-ui/commits?author=cjfff" title="Documentation">📖</a> <a href="https://github.com/cjfff/deep-ui/issues?q=author%3Acjfff" title="Bug reports">🐛</a> <a href="#example-cjfff" title="Examples">💡</a> <a href="#ideas-cjfff" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-cjfff" title="Maintenance">🚧</a> <a href="https://github.com/cjfff/deep-ui/commits?author=cjfff" title="Code">💻</a></td>
   </tr>
 </table>
 

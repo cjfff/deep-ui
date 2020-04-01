@@ -4,7 +4,7 @@
   "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "yarn build",
+    "build": "yarn lib",
     "lint": "vue-cli-service lint",
     "docs:build": "vuepress build docs",
     "docs:dev": "vuepress dev docs",

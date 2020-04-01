@@ -1,5 +1,6 @@
 import FormRenderer from '@femessage/el-form-renderer';
-import DeepexiUi from '../../src/index.js'
+import ELEMENT from '@femessage/element-ui'
+import DeepUi from '../../src/index.js'
 import '../../src/styles/index.less'
 
 export default ({
@@ -7,6 +8,7 @@ export default ({
   options,
   router
 }) => {
-  Vue.use(DeepexiUi)
+  Vue.use(ELEMENT)
+  Vue.use(DeepUi)
   Vue.component(FormRenderer.name, FormRenderer)
 }

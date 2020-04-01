@@ -13,23 +13,24 @@ const getDocs = (dir = 'basic') => {
 }
 
 module.exports = {
-  title: 'DeepexiUi',
-  base: '/deepexi-com/deepexi-ui/',
-  dest: 'workdir/deepexi-ui/',
+  title: 'DeepUi',
+  base: `/deep-ui/`,
+  dest: 'dist',
   description: 'deepexi.com 中台研发团队的组件库',
   port: 8083,
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/vue-prism-editor@0.5.1/dist/VuePrismEditor.css' }],
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@femessage/element-ui@2.16.0/lib/theme-chalk/index.css' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/vue@2.6.11/dist/vue.min.js' }],
-    ['script', { src: 'https://cdn.jsdelivr.net/npm/@femessage/element-ui@2.16.0/lib/index.js' }],
   ],
   plugins: [
     [
       'live',
       {
         // to use a custom layout for your vue components
-        layout: path.resolve(__dirname, './layout.vue')
+        layout: path.resolve(__dirname, './layout.vue'),
+        editorProps: {
+          lineNumbers: true,
+        }
       }
     ],
   ],
@@ -40,14 +41,13 @@ module.exports = {
         '@': path.resolve(__dirname, '../../src'),
         '~': path.resolve(__dirname, '../../src')
       }
-    }
+    },
   },
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
       { text: '组件', link: '/component/guide/introduction' },
-      { text: 'GitHub', link: 'https://github.com/deepexi-com/deepexi-ui' },
-      // { text: 'External', link: 'https://github.com/deepexi-com/deepexi-ui' },
+      { text: 'GitHub', link: 'https://github.com/cjfff/deep-ui' },
     ],
     sidebar: {
       '/component/': [
