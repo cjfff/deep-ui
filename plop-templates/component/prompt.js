@@ -70,6 +70,6 @@ module.exports = {
       }
     ];
 
-    return actions.slice(3);
+    return actions;
   }
 };

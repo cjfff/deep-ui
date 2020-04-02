@@ -10,5 +10,5 @@ features:
   details: 该UI使用了非常轻量级的设计理念，视觉感官更强烈
 - title: 高可用性
   details: 良好的API接口设计，统一的使用习惯
-footer: MIT Licensed | Copyright © 2020-deepexi.com
+footer: MIT Licensed | Copyright © 2020-cjfff
 ---

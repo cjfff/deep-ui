@@ -49,7 +49,7 @@ module.exports = function({ name }) {
 
   const kebName = kebabCase(name);
 
-  componentJson[kebName] = `./component/${kebName}/index.js`;
+  componentJson[kebName] = `./components/${kebName}/index.js`;
 
   const componetsEntries = Object.entries(componentJson);
 

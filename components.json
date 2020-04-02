@@ -4,5 +4,5 @@
    "list-container": "./components/list-container/index.js",
    "deepexi-card": "./components/deepexi-card/index.js",
    "loading-dialog": "./components/loading-dialog/index.js",
-   "markdown-view": "./components/markdown-vie/index.js"
+   "markdown-view": "./components/markdown-view/index.js"
 }
