@@ -27,4 +27,3 @@ git push origin gh-pages
 cd ../../
 rm -rf temp_web
 
-cd -
