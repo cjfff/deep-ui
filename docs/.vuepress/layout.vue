@@ -40,6 +40,9 @@ export default {
       return this.copySuccess ? "SUCCESS" : "COPY";
     }
   },
+  created() {
+    this.$parent.editorProps && (this.$parent.editorProps.lineNumbers = true);
+  },
   methods: {
     handleClickButton() {
       this.showCode = !this.showCode;
@@ -184,13 +187,13 @@ export default {
  * @author Rose Pritchard
  */
 
- .prism-editor-wrapper {
-   background-color: #2d2d2d;
- }
+  .prism-editor-wrapper {
+    background-color: #2d2d2d;
+  }
 
   .prism-editor__line-numbers {
     padding-top: 20px !important;
-     line-height: 1.5rem !important;
+    line-height: 1.5rem !important;
   }
 
   code[class*="language-"],
