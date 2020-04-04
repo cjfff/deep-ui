@@ -1,5 +1,9 @@
 const path = require("path");
 
+const buildMode = process.env.BUILD_MODE;
+
+console.log(buildMode);
+
 module.exports = {
   productionSourceMap: false,
   pages: {
@@ -9,15 +13,9 @@ module.exports = {
       filename: "index.html"
     }
   },
-  pluginOptions: {
-    "style-resources-loader": {
-      preProcessor: "less",
-      patterns: [path.resolve(__dirname, "./src/styles/var.less")]
-    }
-  },
   configureWebpack: {
     externals: {
-      "element-ui": "Element",
+      "@femessage/element-ui": "Element",
       vue: {
         root: "Vue",
         commonjs: "vue",

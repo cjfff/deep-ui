@@ -63,6 +63,11 @@ module.exports = {
         }
       },
       {
+        type: "add",
+        path: `src/theme-chalk/src/${kebabName}.less`,
+        templateFile: "plop-templates/component/css.hbs"
+      },
+      {
         type: "writeJsonAndBuildEntry",
         data: {
           name: data.name

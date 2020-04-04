@@ -17,27 +17,3 @@ export default {
   }
 };
 </script>
-
-<style lang="less">
-@import url("../../styles/var");
-
-.deepexi-card {
-  background: #fff;
-  border-radius: 4px;
-  & + .deepexi-card {
-    margin-top: @margin-size;
-  }
-  &-title {
-    height: 48px;
-    line-height: 48px;
-    border-bottom: 1px solid #e4e8f3;
-    padding: 0 @padding-size;
-    font-size: 14px;
-    font-weight: 500;
-    color: rgba(106, 108, 115, 1);
-  }
-  &-content {
-    padding: @padding-size;
-  }
-}
-</style>

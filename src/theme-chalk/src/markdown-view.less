@@ -1,0 +1,79 @@
+@import './common/var';
+@import "./common/markdown-preview.less";
+
+.mardkdown-view {
+  position: relative;
+  background: #fff;
+  display: flex;
+
+  .left-content {
+    width: 100%;
+    min-width: 300px;
+    margin-right: 80px;
+
+    .markdown-preview {
+      h1 {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .right-content {
+    width: 230px;
+  }
+
+  .deepexi-scrollbar-wrap {
+    position: relative;
+    transform: translateX(-20px);
+
+    &.fixed {
+      top: 0;
+      right: 0;
+      position: fixed;
+    }
+  }
+
+  .deepexi-scrollbar {
+    overflow-y: auto;
+    width: 200px;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 6px #e5e5e5;
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .fe-menu {
+    list-style: none;
+    position: relative;
+    padding: 0;
+
+    &-item {
+      cursor: pointer;
+      position: relative;
+      line-height: 2;
+      font-size: 12px;
+      width: 100%;
+      overflow: hidden; /* 超出部分隐藏 */
+      white-space: nowrap;
+      text-overflow: ellipsis; /* 适用IE */
+      padding: 0 10px;
+      transition: color 0.5s;
+      border-left: 2px solid #e8e8e8;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

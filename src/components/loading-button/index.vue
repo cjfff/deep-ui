@@ -26,8 +26,6 @@ export default {
       loading: false
     };
   },
-  created() {},
-  mounted() {},
   methods: {
     handleClick() {
       this.loading = true;
@@ -38,5 +36,3 @@ export default {
   }
 };
 </script>
-
-<style lang="less"></style>

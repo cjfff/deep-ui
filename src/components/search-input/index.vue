@@ -47,33 +47,3 @@ export default {
   }
 };
 </script>
-
-<style lang="less">
-.search-input {
-  width: 240px;
-  z-index: 10;
-
-  .search-icon /deep/ {
-    display: inline-block;
-    width: 14px;
-    margin-left: 5px;
-    background: url("https://deepexi.oss-cn-shenzhen.aliyuncs.com/deepexi-services-dashboard/common/search.svg")
-      center / contain no-repeat;
-  }
-
-  .el-icon-search:before {
-    font-size: 20px;
-    color: #eee;
-  }
-
-  .el-input__inner {
-    padding-left: 34px;
-    border: none;
-    border: 1px solid #eee;
-
-    &:focus {
-      border: 1px solid #bcc3d9;
-    }
-  }
-}
-</style>

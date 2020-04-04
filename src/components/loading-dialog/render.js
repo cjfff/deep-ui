@@ -1,17 +1,17 @@
 export default {
-  name: 'render',
+  name: "render",
   functional: true,
   props: {
     render: Function,
     data: Object,
-    node: Array,
+    node: Array
   },
   render: (h, ctx) => {
     const params = {
-      data: ctx.props.data,
+      data: ctx.props.data
     };
-    const {render} = ctx.props;
+    const { render } = ctx.props;
 
-    return typeof render === 'object' ? render : render(h, params);
-  },
+    return typeof render === "object" ? render : render(h, params);
+  }
 };

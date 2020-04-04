@@ -94,16 +94,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.text-tooltip {
-  display: inline-block;
-  overflow: hidden;
-  width: 100%;
-
-  &.ellipsis {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-}
-</style>
