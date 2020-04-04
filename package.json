@@ -64,6 +64,7 @@
     "vue-cli-plugin-element-ui": "~1.1.4",
     "vue-cli-plugin-style-resources-loader": "~0.1.4",
     "vue-template-compiler": "^2.6.11",
-    "vuepress-plugin-live": "^1.5.1"
+    "vuepress-plugin-live": "^1.5.1",
+    "watch": "^1.0.2"
   }
 }

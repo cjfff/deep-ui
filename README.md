@@ -22,7 +22,7 @@
 - [x] `yarn new` 交互式创建新组件文件，不用再繁琐的写 `template`
 - [ ] vuepress 组件更新注释文档预览实时更新
 - [ ] 单独打包每个组件 `css`
-- [ ] 自动生产 release logs
+- [ ] 自动生成 release logs
 - [ ] 添加 eslint
 
 ## Project setup

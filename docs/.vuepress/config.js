@@ -23,6 +23,8 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@femessage/element-ui@2.16.0/lib/theme-chalk/index.css' }],
   ],
   plugins: [
+    '@vuepress/last-updated',
+    '@vuepress/back-to-top',
     [
       'live',
       {
@@ -76,7 +78,7 @@ module.exports = {
   },
   markdown: {
     extendMarkdown: (md) => {
-      md.use(require('markdown-it-vuese'), {
+      md.use(require('markdown-it-vuese/src/index.js'), {
         root: `${process.cwd()}/src/components/`,
         useRender: (vueseRender) => {
           const renderRes = vueseRender.render()
@@ -85,6 +87,7 @@ module.exports = {
             , []).join('\r')
         },
       })
+
     }
   }
 }
