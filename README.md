@@ -20,10 +20,10 @@
 - [x] 代码打包 📦 npm lib 即可
 - [x] 代码即文档，代码里面加注释即可解决文档问题
 - [x] `yarn new` 交互式创建新组件文件，不用再繁琐的写 `template`
-- [ ] vuepress 组件更新注释文档预览实时更新
-- [ ] 单独打包每个组件 `css`
-- [ ] 自动生成 release logs
+- [x] 按需加载 css [栗子仓库](https://github.com/cjfff/deep-ui-demo)
 - [ ] 添加 eslint
+- [ ] standard-version
+- [ ] 自动生成 release logs
 
 ## Project setup
 
@@ -45,6 +45,19 @@ yarn install
 yarn docs:dev // 启动开发模式
 
 yarn new // 创建新组件
+```
+
+## 发布
+
+现在还没有自动化...
+
+```shell
+yarn pub
+
+# 更新 package.json 然后
+
+npm publish
+"pub": "yarn build:lib && yarn build:theme",
 ```
 
 ### 参考链接
