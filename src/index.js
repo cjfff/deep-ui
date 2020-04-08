@@ -7,6 +7,7 @@ import DeepexiCard from "./components/deepexi-card/index.js";
 import LoadingDialog from "./components/loading-dialog/index.js";
 import MarkdownView from "./components/markdown-view/index.js";
 import LoadingButton from "./components/loading-button/index.js";
+import { promptDialog, promptDrawer } from "./components/prompt-form";
 
 // 存储组件列表
 const components = [
@@ -25,6 +26,9 @@ const install = function(Vue) {
   if (install.installed) return;
   // 遍历注册全局组件
   components.forEach(component => Vue.component(component.name, component));
+  // prompt-form 方法
+  Vue.prototype.$promptDialog = promptDialog;
+  Vue.prototype.$promptDrawer = promptDrawer;
 };
 
 // 判断是否是直接引入文件
