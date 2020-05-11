@@ -1,16 +1,4 @@
-<template>
-  <el-button
-    v-bind="$attrs"
-    v-on="$listeners"
-    @click="handleClick"
-    :loading="loading"
-    class="loading-button"
-  >
-    <slot />
-  </el-button>
-</template>
-
-<script>
+<script lang="tsx">
 export default {
   name: "LoadingButton",
   props: {
@@ -33,6 +21,20 @@ export default {
         this.loading = false;
       });
     }
+  },
+  render() {
+    const compProp = {
+      props: this.$attrs,
+      on: Object.assign({}, this.$listeners, {
+        click: this.handleClick.bind(this)
+      })
+    };
+    return (
+      <el-button {...compProp} loading={this.loading} class="loading-button">
+        {/** 默认slot */}
+        {this.$slots.default}
+      </el-button>
+    );
   }
 };
 </script>
