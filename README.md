@@ -1,4 +1,4 @@
-# dee-ui
+# deep-ui
 
 [![Build Status](https://travis-ci.com/cjfff/deep-ui.svg?branch=master)](https://travis-ci.com/cjfff/deep-ui)
 [![NPM License](https://badgen.net/npm/license/@femessage/el-data-table)](https://github.com/cjfff/deep-ui/raw/master/LICENSE)
